@@ -8,3 +8,4 @@
 * <a href="https://github.com/hhe0/tools-daily/blob/master/20190128/MorseCode.php">摩斯密码转换机</a>
 * <a href="https://github.com/hhe0/tools-daily/blob/master/20190204/foraward-static-call.php">PHP的后期静态绑定</a>
 * <a href="https://github.com/hhe0/tools-daily/blob/master/20190204/static.php">PHP的static关键字测试</a>
+* <a href="https://github.com/hhe0/tools-daily/blob/master/20190204/try.php">PHP的try..,(throw)...catch...finally语句测试</a>
