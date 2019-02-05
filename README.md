@@ -11,3 +11,4 @@
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190204/foraward-static-call.php">PHP的后期静态绑定</a>|PHP|2019/02/04|
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190204/static.php">PHP的static关键字测试</a>|PHP|2019/02/04|
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190204/try.php">PHP的try..,(throw)...catch...finally语句测试</a>|PHP|2019/02/04|
+|<a href="https://github.com/hhe0/tools-daily/blob/master/20190205/yield.php">PHP的yield生成器测试</a>|PHP|2019/02/05|
