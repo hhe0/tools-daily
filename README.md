@@ -16,3 +16,4 @@
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190208/modify-pdf.py">删除PDF文件的最后空白页</a>|Python|2019/02/08|
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190216/singleton-pattern.php">PHP实现单例模式</a>|PHP|2019/02/16|
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190217/reference.php">PHP的引用</a>|PHP|2019/02/17|
+|<a href="https://github.com/hhe0/tools-daily/blob/master/20190217/equal.php">PHP的==与===</a>|PHP|2019/02/17|
