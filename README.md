@@ -20,3 +20,4 @@
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190217/empty.php">PHP的isset()与empty()的区别</a>|PHP|2019/02/17|
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190220/bubble-sort.php">PHP实现冒泡排序</a>|PHP|2019/02/20|
 |<a href="https://github.com/hhe0/tools-daily/blob/master/20190220/quick-sort.php">PHP实现快速排序</a>|PHP|2019/02/20|
+|<a href="https://github.com/hhe0/tools-daily/blob/master/20190220/sort-strategy.php">PHP实现排序的策略模式实现</a>|PHP|2019/02/20|
