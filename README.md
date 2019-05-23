@@ -1,5 +1,5 @@
 ## 实验环境
-* windows7 + python3 + php5.6
+* windows7 + python3 + php5.6 + go1.4.2
 
 ## 代码列表
 
