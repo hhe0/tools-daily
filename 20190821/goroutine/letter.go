@@ -6,23 +6,19 @@ import (
 )
 
 func main() {
-	//printLetter()
-	//printNumbers()
-	go printLetter()
 	go printNumbers()
-	fmt.Println()
+	printLetter()
 }
 
 func printNumbers() {
 	for i := 0; i < 10; i++ {
-		time.Sleep(1 * time.Second)
+		time.Sleep(100 * time.Millisecond)
 		fmt.Printf("%d", i)
 	}
 }
 
 func printLetter() {
 	for i := 'A'; i < 'A'+10; i++ {
-		time.Sleep(1 * time.Second)
 		fmt.Printf("%c", i)
 	}
 }
