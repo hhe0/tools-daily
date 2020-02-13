@@ -1,7 +1,17 @@
-package main
+package samplePackage
 
 import "fmt"
 
-func main() {
-	fmt.Println("aa")
+var a [10]int
+
+func init() {
+	fmt.Println(1111)
+
+	PrintA()
+}
+
+func PrintA() {
+	for i := range a {
+		fmt.Println(i)
+	}
 }
