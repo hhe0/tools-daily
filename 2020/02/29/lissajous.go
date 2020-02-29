@@ -10,10 +10,13 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"strconv"
 	"time"
 )
 
 var palette []color.Color
+
+const DefaultCycles = 5.0
 
 func init() {
 	rand.Seed(time.Now().UTC().UnixNano())
@@ -30,18 +33,30 @@ func init() {
 func main() {
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		handler := func(w http.ResponseWriter, r *http.Request) {
-			lissajous(w)
+			if err := r.ParseForm(); err != nil {
+				log.Print(err)
+			}
+
+			var cyclesFloat float64
+			cycles, ok := r.Form["cycles"]
+			if !ok {
+				cyclesFloat = DefaultCycles
+			} else {
+				cyclesFloat, _ = strconv.ParseFloat(cycles[0], 64)
+			}
+			lissajous(w, cyclesFloat)
 		}
 		http.HandleFunc("/", handler)
 		log.Fatal(http.ListenAndServe("localhost:8000", nil))
 		return
 	}
-	lissajous(os.Stdout)
+
+	lissajous(os.Stdout, DefaultCycles)
 
 }
-func lissajous(out io.Writer) {
+
+func lissajous(out io.Writer, cycles float64) {
 	const (
-		cycles  = 5     // 完整的x振荡器变化的个数
 		res     = 0.001 //	角度分辨率
 		size    = 100   //	图像画布包含 [-size..+size]
 		nframes = 64    //	动画中的帧数
